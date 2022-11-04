@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="magic.css">
+    <title>ME</title>
+</head>
+<body>
+    <nav>
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+            <li><a href="PersonalWebsite.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="study.html">Study</a></li>
+        </ul>
+    </nav>
+    <section class="about">
+        <div class="aboutme">
+            <img src="profile.png" alt="Kulot">
+            <div class="me">
+                <h1>About Me</h1>
+                <h5><span style="color:red">CAST</span> student</h5>
+                <p>I am 20 years old from Cahayag, Tubigon Bohol. A 2nd year college student of Mater Dei College. A beginner in programming and is taking it's time to learn.
+                    My phone, music, and my beloved earphones are things I can't live without. I'm unable to leave home without my earphones.
+                    A lot of the time, I use music to make myself more comfortable and music calms me down. </p>
+                    <div class="container">
+                        <button type="submit" class="btn" onclick="openPopup()">Let's Talk</button>
+                        <div class="popup" id="popup">
+                            <h2>Contact me on my Gmail:</h2>
+                            <p>vncemari@gmail.com</p>
+                            <button type="button" onclick="closePopup()">OK</button>
+                        </div>
+                    </div>
+            </div>
+            <script>
+                let popup = document.getElementById("popup");
+
+                function openPopup() {
+                    popup.classList.add("open-popup");
+                }
+                function closePopup() {
+                    popup.classList.remove("open-popup");
+                }
+            </script>
+        </div>
+    </section>
+</body>
+</html>
